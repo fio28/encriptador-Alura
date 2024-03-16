@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/img/icono encriptador.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Encriptador de texto</title>
+</head>
+
+<header>
+
+  <div class="header">
+      <img src="imagenes/Logo.png" alt="Logo de Alura Latam" class="logo">
+  </div>
+
+</header>
+
+<body>
+  <main class="main_conteiner">
+
+    <section class="encrypter_container">
+      <textarea name="" id="initialText" class="shake-placeholder-color-blue" placeholder="Ingrese el texto aquí"
+        oninput="autoResize()"></textarea>
+      <div class="encryptorButtons">
+        <div class="container_ad">
+          <div class="elements_ad">
+            <img src="imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación" id="imgAd" />
+            <span id="spanAd">Solo letras minúsculas y sin acentos</span>
+          </div>
+          <button id="encryptor" class="buttons" onclick="encryptorText()" type="button">
+            Encriptar
+          </button>
+        </div>
+
+        <button id="decryptor" class="buttons verde" onclick="decryptorText()" type="button">
+          Desencriptar
+        </button>
+      </div>
+    </section>
+
+    <section class="decryptor_container">
+      <div id="elementsDecryptor">
+        <div class="element_text">
+          <textarea name="" title="encriptado" class="encrypted_text" id="encrypted" readonly></textarea>
+        </div>
+        <div class="element_button">
+          <button id="copy" onclick="copyText()" type="button">Copiar</button>
+        </div>
+      </div>
+      <div id="elementsInformation">
+        <div id="doll">
+          <img class="doll_size" src="imagenes/Muñeco.png" alt="Muñeco" />
+        </div>
+        <div class="text_no_found">
+          <span>Ningún mensaje fue encontrado</span>
+        </div>
+        <div class="text_enter">
+          <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer>
+
+    <footer>  
+        <p class="frase">Proyecto de Alura Latam <br>Oracle Next Education - Grupo 6.<br> Realizado por Fiorela Ruiz Rojas.</p>
+        
+      
+    </footer>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
